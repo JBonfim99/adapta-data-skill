@@ -2,7 +2,7 @@
 
 Skill para agentes de IA consumirem os **dados de negócio da Adapta** (ScoreCard
 BUs) pelo servidor MCP `adapta-data`: receita, vendas, reembolso, renovação/NRR,
-marketing, LTV e placar semanal, por BU — com a metodologia oficial da casa.
+marketing, COGS de IA e placar semanal, por BU — com a metodologia oficial da casa.
 
 ## Instalar
 
@@ -31,7 +31,7 @@ Três pilares:
 2. **Definições oficiais** — o glossário da casa com as fórmulas exatas:
    receita bruta/líquida, taxa de reembolso madura, Taxa de Renovação
    canônica, NRR/GRR padrão, churn voluntário×involuntário, ROAS/CPA/cobertura,
-   margem do placar, LTV, COGS de IA.
+   margem do placar, COGS de IA.
 3. **Uso correto do MCP** — qual das 12 tools usar, semântica
    OFICIAL × EXPLORATÓRIO (campo `confianca`), e receitas prontas.
 
