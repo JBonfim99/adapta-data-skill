@@ -10,7 +10,7 @@ Compatível com o padrão [Agent Skills](https://skills.sh) (Claude Code, Cursor
 Codex, Gemini CLI e outros):
 
 ```bash
-npx skills add <owner>/adapta-data-skill
+npx skills add JBonfim99/adapta-data-skill
 ```
 
 Depois de instalar a skill, conecte o MCP (precisa de uma chave pessoal, gerada
