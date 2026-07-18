@@ -1,6 +1,6 @@
 ---
 name: adapta-data
-description: Use when answering questions about Adapta's business data — receita, vendas, reembolso, renovação/NRR, marketing (ROAS/CPA/ads), LTV, placar semanal, por BU (ONE/LABS/SKIP/SUMMIT). Explains how Adapta captures its data (Guru → Nekt → ScoreCard), the official metric definitions (house methodology) and the correct use of the adapta-data MCP server. Trigger on "dados da Adapta", "scorecard", "NRR", "receita da BU", "quanto vendemos", "taxa de reembolso", "renovação", "ROAS", "placar", "LTV".
+description: Use when answering questions about Adapta's business data — receita, vendas, reembolso, renovação/NRR, marketing (ROAS/CPA/ads), placar semanal, por BU (ONE/LABS/SKIP/SUMMIT). Explains how Adapta captures its data (Guru → Nekt → ScoreCard), the official metric definitions (house methodology) and the correct use of the adapta-data MCP server. Trigger on "dados da Adapta", "scorecard", "NRR", "receita da BU", "quanto vendemos", "taxa de reembolso", "renovação", "ROAS", "placar".
 ---
 
 # adapta-data — captura, definições e uso correto do MCP
@@ -124,11 +124,10 @@ Use EXATAMENTE estas definições. Não invente variações.
   R$5,00 × 1,0636 VAT), sobre a receita pro-rata.
 - Cada linha do placar carrega a própria nota de metodologia — repita-a ao citar.
 
-### Produto
+### COGS de IA
 
-- **LTV** — médio e mediano por cliente, com recorte quem renova × quem não.
-- **Ciclos** — distribuição de contratos por nº de renovações (totais × ativos).
-- **COGS de IA** — custo USD do AI Gateway (líquido de desconto, sem devs).
+- **COGS de IA** — custo USD do AI Gateway (líquido de desconto, sem devs);
+  só nas BUs com produto de IA (ONE/SKIP).
 
 ---
 
@@ -172,7 +171,7 @@ Toda resposta traz `confianca`:
 | Renovação, NRR, GRR, churn, recuperação | `renovacao_metrics` (ONE/LABS/SKIP) |
 | Reembolso: taxa, motivos, prazo, chargeback, uso de IA | `reembolso_metrics` |
 | Placar semanal (semana fechada, metas) | `placar` |
-| LTV, ciclos, COGS de IA | `produto_metrics` |
+| COGS de IA (custo do AI Gateway) | `cogs_ia` |
 | Allowlist produto→BU, produto fora das métricas | `list_produtos_bu` |
 | Cruzamento não coberto | `explore_nekt_sql` (metodologia + star schema na descrição da tool) |
 
